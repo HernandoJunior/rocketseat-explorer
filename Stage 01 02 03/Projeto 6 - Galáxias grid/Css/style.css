@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  display: grid;
+  justify-content: center;
+  background: #121214;
+  font-family: 'Mulish', sans-serif;
+  padding: 7.2rem 18.4rem;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 5.8rem;
+  color: #02799D;
+}
+
+header > p{
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #E1E1E6;
+  margin-bottom: 6.2rem;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+
+  gap: 5rem 6rem;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #323238;
+  border-radius: .8rem;
+  border: .2rem solid #323238;
+}
+
+main p{
+  font-size: 2rem;
+  color: #C4C4CC;
+  font-weight: 600;
+  padding: 2.4rem 3.2rem 3.2rem
+}
+
+
+strong{
+  font-size: 3.5rem;
+  font-weight: 900;
+
+  color: #E1E1E6;
+
+  padding: 2.4rem 3.2rem 0;
+}
+

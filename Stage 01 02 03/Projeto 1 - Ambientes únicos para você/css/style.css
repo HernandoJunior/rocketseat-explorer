@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+span{
+  color: orange;
+}
+
+.imagem-bot{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.container-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 72px;
+}
+
+.container-main img{
+  margin: 0 auto 72px;
+}
+
+.box-link-footer{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box-link-footer a{
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+

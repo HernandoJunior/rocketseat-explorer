@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+
+:root{
+  --color-bg-cards: #ffffff;
+  --border-cards: 20px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #F9F4FB;
+  width: 43.6rem;
+}
+
+header div{
+  margin-top: 1.7rem;
+}
+
+div strong{
+  color: #B52184;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+div p{
+  font-weight: 600;
+  color: #312D64;
+  font-size: 2rem;
+  margin: .5rem 0 3.5rem;
+}
+
+header button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+main{
+  background: #312D64;
+  width: 43.6rem;
+}
+
+#cards{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 5rem;
+  margin: 5.3rem 3.9rem;
+}
+.text_card{
+  margin: 3.3rem 0 2.6rem;
+}
+.text_card strong{
+  font-size: 3rem;
+}
+.text_card p{
+  font-size: 1.6rem;
+}
+
+.card_container{
+  background-color: var(--color-bg-cards);
+  border-radius: var(--border-cards);
+  padding: 2.6rem;
+}
+
+.last_section{
+  background: #F9F4FB;
+  width: 43.6rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+
+  padding: 7rem 4rem;
+  gap: 3rem;
+
+  cursor: pointer;
+}
+
+form button{
+  background-color: #312D64;
+  height: 4.5rem;
+  width: 15rem;
+  border-radius: 1.5rem;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+}
+
+form input{
+  border-radius: 1.5rem;
+  border-color: #312D64;
+  background-color: #F9F4FB;
+  
+  height: 4rem;
+  padding: 2rem 4rem;
+
+
+  color: #312D64;
+  font-weight: 600;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  outline: none;
+}
+
+input[type=email], 
+input[type=text]{
+  background-image: url(../images/form_@.png);
+  background-repeat: no-repeat;
+  background-position: 1rem;
+
+}
+
+input[type=search]{
+  background-image: url(../images/form_image.png);
+  background-repeat: no-repeat;
+  background-position: 1rem;
+}
+
+textarea{
+  border-radius: 1.5rem;
+  color: #312D64;
+  background-color: #F9F4FB;
+  padding: 2rem;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+footer{
+  height: 7.8rem;
+  width: 43.6rem;
+  background-color: #312D64;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer p{
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 1024px){
+    header{
+      width: 100vw;
+      flex-direction: row-reverse;
+    }
+    header div{
+      margin-right: 30rem;
+    }
+    .astronauta{
+      width: 60rem;
+    }
+    header button{
+      position: absolute;
+      bottom: 10rem;
+      left: 20rem;
+    }
+
+    main{
+      width: 100vw;
+    }
+
+    #cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 5rem;
+      margin: 5.3rem 3.9rem;
+    }
+
+    .last_section{
+      width: 100vw;
+      background-image: url(../images/desktop_image_firstsection.png);
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    form{
+      width: 50vw;
+    }
+
+    footer{
+      width: 100vw;
+    }
+}
